@@ -1,0 +1,206 @@
+{
+	"id": "c60634a3-23e0-3045-4ee8-824c167bb69f",
+	"name": "rest2",
+	"description": "",
+	"order": [
+		"43b1a4f3-9727-272b-0527-95feb38cc91d",
+		"5c7b10e1-be49-428d-4b5f-df916a94e7a0",
+		"2ac422bb-00ea-ab4f-7b85-21e5249bf991",
+		"a24f90b1-952c-ae88-53a6-4957fdd19653",
+		"f435eb8e-d167-1e86-53f2-391f5e7f7c2e",
+		"99e31710-b212-e27f-0737-b53dfc27a492"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1527204691934,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2ac422bb-00ea-ab4f-7b85-21e5249bf991",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/samplerestapp/rest/product/1/comment",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c60634a3-23e0-3045-4ee8-824c167bb69f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8080/samplerestapp/rest/product/1/comment",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1527204749596,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"tekst\" : \"dobra wydajnosc\"\n}"
+		},
+		{
+			"id": "43b1a4f3-9727-272b-0527-95feb38cc91d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/samplerestapp/rest/product/1/comment",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c60634a3-23e0-3045-4ee8-824c167bb69f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8080/samplerestapp/rest/product/1/comment",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1527204697896,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"model\" : \"poginacz\"\n}"
+		},
+		{
+			"id": "5c7b10e1-be49-428d-4b5f-df916a94e7a0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/samplerestapp/rest/product",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c60634a3-23e0-3045-4ee8-824c167bb69f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8080/samplerestapp/rest/product",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1527204730582,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"name\" : \"procek Intel\",\n\"category\" : \"Procesor\",\n\"price\": 777 \n}"
+		},
+		{
+			"id": "99e31710-b212-e27f-0737-b53dfc27a492",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/samplerestapp/rest/product/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "c60634a3-23e0-3045-4ee8-824c167bb69f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8080/samplerestapp/rest/product/1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1527204835323,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"name\" : \"Pamiec\",\n\"category\" : \"Ram\",\n\"Price\" : 555\n}"
+		},
+		{
+			"id": "a24f90b1-952c-ae88-53a6-4957fdd19653",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/samplerestapp/rest/product/category/Ram",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c60634a3-23e0-3045-4ee8-824c167bb69f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8080/samplerestapp/rest/product/category/Ram",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1527204769916,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"model\" : \"poginacz\"\n}"
+		},
+		{
+			"id": "f435eb8e-d167-1e86-53f2-391f5e7f7c2e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/samplerestapp/rest/product",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c60634a3-23e0-3045-4ee8-824c167bb69f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8080/samplerestapp/rest/product",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1527204791149,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"name\" : \"proceke\",\n\"category\" : \"procesor\",\n\"price\": 23 \n}"
+		}
+	]
+}

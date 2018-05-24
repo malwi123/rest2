@@ -1,0 +1,122 @@
+Zadanie 6: REST'owe API katalog produktów
+
+1. Wyświetlenie listy wszystkich produktów.
+
+1a. W tym celu należy wysłać zapytanie:
+	Typ: GET
+	URL: localhost:8080/samplerestapp/rest/product 
+	
+1b. Przykładowa odpowiedz:
+	{
+        "category": "Procesor",
+        "id": 1,
+        "name": "Pentium I7",
+        "price": 2200
+    },
+	{
+        "category": "Procesor",
+        "id": 2,
+        "name": "Pentium I5",
+        "price": 1200
+    }
+	
+2. Wyświetlenie produktu o podanym ID.
+
+2a. W tym celu należy wysłać zapytanie:
+	Typ: GET
+	URL: localhost:8080/samplerestapp/rest/product/{id} 
+	
+2b. Przykładowa odpowiedz:
+	{
+        "category": "Procesor",
+        "id": 1,
+        "name": "Pentium I7",
+        "price": 2200
+    }
+	
+3. Zakutalizowanie informacji o produkcie.
+
+3a. W tym celu należy wysłać zapytanie:
+	Typ: PUT
+	URL: localhost:8080/samplerestapp/rest/product/{id} 
+	JSON:
+	{
+        "category": "Procesor",
+        "name": "Pentium I7",
+        "price": 2200
+    }
+	
+4. Wyszukiwanie produktów po cenie.
+
+4a. W tym celu należy wysłać zapytanie:
+	Typ: GET
+	URL: localhost:8080/samplerestapp/rest/product/price/{from}/{to}
+	
+4b. Przykładowa odpowiedz:
+	{
+        "category": "Procesor",
+        "id": 1,
+        "name": "Pentium I7",
+        "price": 2200
+    }
+	
+5. Wyszukiwanie produktów po nazwie.
+
+5a. W tym celu należy wysłać zapytanie:
+	Typ: GET
+	URL: localhost:8080/samplerestapp/rest/product/name/{name}
+	
+5b. Przykładowa odpowiedz:
+	{
+		"category": "Ram",
+		"id": 2,
+		"name": "Pamiec",
+		"price": 600
+	}
+	
+6. Wyszukiwanie produktów po kategori.
+
+6a. W tym celu należy wysłać zapytanie:
+	Typ: GET
+	URL: localhost:8080/samplerestapp/rest/product/category/{category}
+	
+6b. Przykładowa odpowiedz:
+	{
+		"category": "Ram",
+		"id": 2,
+		"name": "Pamiec",
+		"price": 600
+	}
+	
+Bonusowe 1:
+
+7. Dodawanie komentarzy do produktu.
+
+7a. W tym celu należy wysłać zapytanie:
+	Typ: POST
+	URL: localhost:8080/samplerestapp/rest/product/{id}/comment
+	JSON:
+	{
+		"tekst" : "dobra wydajnosc"
+	}
+	
+8. Wyswietlanie komentarzy do produktu.
+
+8a. W tym celu należy wysłać zapytanie:
+	Typ: GET
+	URL: localhost:8080/samplerestapp/rest/product/{id}/comment
+
+8b. Przykladowa odpowiedz
+	{
+        "id": 1,
+        "product": {
+            "category": "Ram",
+            "id": 1,
+            "name": "Pamiec",
+            "price": 600
+        },
+        "tekst": "dobra wydajnosc"
+    }
+
+
+	
